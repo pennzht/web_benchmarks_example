@@ -23,7 +23,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  web_benchmarks_framework:
+    git:
+      url: https://github.com/pennzht/web_benchmarks_framework.git
+      ref: d77ce78961f64c9049bf6093c2fbd396f7adfd1f
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
