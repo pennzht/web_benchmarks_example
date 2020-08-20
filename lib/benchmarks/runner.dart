@@ -11,8 +11,8 @@ import 'package:web_benchmarks_example/homepage.dart' show textKey, aboutPageKey
 import 'package:web_benchmarks_example/aboutpage.dart' show backKey;
 
 /// A recorder that measures frame building durations for the Gallery.
-class FirstRecorder extends WidgetRecorder {
-  FirstRecorder({@required this.benchmarkName}): super(name: benchmarkName);
+class AppRecorder extends WidgetRecorder {
+  AppRecorder({@required this.benchmarkName}): super(name: benchmarkName);
 
   final String benchmarkName;
 
@@ -81,11 +81,11 @@ Future<void> main () async {
   await runBenchmarks(
     {
       'scroll':
-        () => FirstRecorder(benchmarkName: 'scroll'),
+        () => AppRecorder(benchmarkName: 'scroll'),
       'page':
-        () => FirstRecorder(benchmarkName: 'page'),
+        () => AppRecorder(benchmarkName: 'page'),
       'tap':
-        () => FirstRecorder(benchmarkName: 'tap'),
+        () => AppRecorder(benchmarkName: 'tap'),
     },
   );
 }
